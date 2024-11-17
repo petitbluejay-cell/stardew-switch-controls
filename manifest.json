@@ -1,0 +1,13 @@
+{
+  "Name": "SwitchControls",
+  "Author": "Bri Bri",
+  "Version": "1.0.0",
+  "Description": "Changes the controls to work like on the Nintendo Switch",
+  "UniqueID": "net.briankendall.SwitchControls",
+  "EntryDll": "SwitchControls.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+        "GitHub:briankendall/stardew-switch-controls",
+        "Nexus:29442"
+    ]
+}
