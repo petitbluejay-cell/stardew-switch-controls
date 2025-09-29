@@ -35,14 +35,14 @@ namespace SwitchControls
                 Buttons orgButtons = Traverse.Create(buttonState).Field("_buttons").GetValue<Buttons>();
                 Buttons newButtons = orgButtons;
                 
-                if ((orgButtons & Buttons.A) == Buttons.A) {
-                    newButtons &= (~Buttons.A);
-                    newButtons |= (Buttons.B);
+                if ((orgButtons & Buttons.X) == Buttons.X) {
+                    newButtons &= (~Buttons.X);
+                    newButtons |= (Buttons.Y);
                 }
                 
-                if ((orgButtons & Buttons.B) == Buttons.B) {
-                    newButtons &= (~Buttons.B);
-                    newButtons |= (Buttons.A);
+                if ((orgButtons & Buttons.Y) == Buttons.Y) {
+                    newButtons &= (~Buttons.Y);
+                    newButtons |= (Buttons.X);
                 }
                 
                 GamePadState newState = new GamePadState(
@@ -83,3 +83,4 @@ namespace SwitchControls
         }
     }
 }
+
